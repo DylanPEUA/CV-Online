@@ -117,6 +117,10 @@ footer i {
     margin: 0 10px;
 }
 
+footer i:hover {
+    opacity: 0.7; /* diminue légèrement l’opacité */
+}
+
 footer p {
     margin-top: 10px;
     font-style: italic;
