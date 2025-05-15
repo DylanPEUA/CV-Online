@@ -4,23 +4,27 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CV Online</title>
-    <script src="https://kit.fontawesome.com/69b0649955.js" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/69b0649955.js" crossorigin="anonymous"></script> <!--Lien pour les icones-->
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet"> <!--Lato via Google fonts-->
 </head>
 <body>
     <header>
-
         <section>
-            <img src="#" alt="#">
-            <h1>Dylan Peua</h1>
-            <h2>Développeur Web et Web Mobile</h2>
-            <ul>
-                <li><i class="fa-solid fa-envelope"></i><span>Mail</span></li>
-                <li><i class="fa-solid fa-phone"></i><span>Telephone</span></li>
-                <li><i class="fa-solid fa-house"></i><span>Adresse</span></li>
-                <li><i class="fa-solid fa-car"></i><span>Permis B</span></li>
-            </ul>
-        </section>  
-
+            <img src="./assets/img/pdp.jpg" alt="Photo de profil">
+            
+            <div>
+                <h1>Dylan Peua</h1>
+                <h2>Développeur Web et Web Mobile</h2>
+                <ul>
+                    <li><i class="fa-solid fa-envelope"></i><a href="mailto:dylan.peua@gmail.com">dylan.peua@gmail.com</a></li>
+                    <li><i class="fa-solid fa-phone"></i><a href="tel:+33666666666">0666666666</a></li>
+                    <li><i class="fa-solid fa-house"></i><a href="https://www.google.fr/maps/place/20+Av.+Leclerc,+69007+Lyon/@45.7432278,4.8299548,18.25z/data=!4m6!3m5!1s0x47f4ea35c0fc6c5d:0xe536f3544d064a88!8m2!3d45.7437268!4d4.8302951!16s%2Fg%2F11c1549_6b?entry=ttu&g_ep=EgoyMDI1MDUwNy4wIKXMDSoASAFQAw%3D%3D" 
+                        target="_blank"> 20 Av. Leclerc, 69007 Lyon</a></li>
+                    <li><i class="fa-solid fa-car"></i>Permis B</li>
+                </ul>
+            </div>  
+        </section>
     </header>
     
     <main>
@@ -28,70 +32,66 @@
         <section> <!--Colonne à gauche-->
 
             <h3>Compétences</h3>
+            
+            <p><strong>HTML </strong>
+                <span>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="far fa-star"></i>
+                </span>
+            </p>
+            <p><strong>CSS</strong> 
+                <span>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="far fa-star"></i>
+                </span>
+            </p>
+            <p><strong>JavaScript</strong>
+                <span>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="far fa-star"></i>
+                    <i class="far fa-star"></i>
+                    <i class="far fa-star"></i>
+                </span>
+            </p>
+            <p><strong>PHP</strong>
+                <span>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="far fa-star"></i>
+                    <i class="far fa-star"></i>
+                    <i class="far fa-star"></i>
+                    <i class="far fa-star"></i>
+                </span>
+            </p>
 
-            <ul class="skills">
-                <li><strong>HTML </strong>
-                    <span>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="far fa-star"></i>
-                    </span>
-                </li>
-                <li><strong>CSS</strong> 
-                    <span>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="far fa-star"></i>
-                    </span>
-                </li>
-                <li><strong>JavaScript</strong>
-                    <span>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="far fa-star"></i>
-                        <i class="far fa-star"></i>
-                        <i class="far fa-star"></i>
-                    </span>
-                </li>
-                <li><strong>PHP</strong>
-                    <span>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="far fa-star"></i>
-                        <i class="far fa-star"></i>
-                        <i class="far fa-star"></i>
-                        <i class="far fa-star"></i>
-                    </span>
-                </li>
-              </ul>
+            <h3>Langues</h3>
 
-              <h3>Langues</h3>
+            <p><strong>Français</strong><span class="language">Langue maternelle</span></p>
+            <p><strong>Anglais</strong><span class="language">Niveau C1</span></p>
+            <p><strong>Espagnol</strong><span class="language">Notions</span></p>
 
-              <ul class="languages">
-                <li><strong>Français</strong></li>
-                <li><strong>Anglais</strong></li>
-                <li><strong>Espagnol</strong></li>
-              </ul>
+            <h3>Qualités</h3>
 
-              <h3>Qualités</h3>
-
-              <ul class="self">
+            <ul class="self">
                 <li>Esprit d'équipe</li>
                 <li>Autonomie</li>
                 <li>Organisation</li>
                 <li>Creativité</li>
-              </ul>
+            </ul>
 
-              <h3>Centres d'intérêt</h3>
+            <h3>Centres d'intérêt</h3>
 
-              <ul class="self">
+            <ul class="self">
                 <li>Yoga</li>
                 <li>Tennis</li>
                 <li>Ecologie</li>
-              </ul>
+            </ul>
 
         </section>
 
@@ -108,54 +108,21 @@
 
             <h3>Formations</h3>
             <hr>
-
-                <div class="info">
-                    <ul>
-                        <li><strong>Titre Professionnel DWWM</strong><br><em>Centre Européen de formation</em></li>
-                        <li><strong>Master Science de l'Océan, de l'Atmosphère et du Climat</strong><br><em>Université Claude Bernard Lyon 1</em></li>
-                        <li><strong>Licence Physique Chimie</strong><br><em>Université de la Polynésie Française</em></li>
-                        <li><strong>Baccalauréat</strong><br><em>Lycée Paul-Gauguin</em></li>
-                    </ul>
-                </div>
-                
-                <div class="date">
-                    <ul>
-                        <li>2025</li>
-                        <li>2022/2024</li>
-                        <li>2019/2022</li>
-                        <li>2018/2019</li>
-                    </ul>
-                </div>
+    
+                <p><strong>Titre Professionnel DWWM</strong><span>2025</span><br><em>Centre Européen de formation</em></p>
+                <p><strong>Master Science de l'Océan, de l'Atmosphère et du Climat</strong><span>2022/2024</span><br><em>Université Claude Bernard Lyon 1</em></p>
+                <p><strong>Licence Physique Chimie</strong><span>2019/2022</span><br><em>Université de la Polynésie Française</em></p>
+                <p><strong>Baccalauréat</strong><span>2019</span><br><em>Lycée Paul-Gauguin</em></p>
 
             <h3>Stages</h3>
             <hr>
 
-                <div class="info">
-                    <ul>
-                        <li><strong>Ingénieur de recherche</strong><br><em>IFP Energies Nouvelles</em></li>
-                    </ul>
-                </div>
-                
-                <div class="date">
-                    <ul>
-                        <li>2022/2023</li>
-                    </ul>
-                </div>
+                <p><strong>Ingénieur de recherche</strong><span>2019</span><br><em>IFP Energies Nouvelles</em></p>
 
             <h3>Expériences professionnelle</h3>
             <hr>
-
-                <div class="info">
-                    <ul>
-                        <li><strong>Vendeurs</strong><br><em>Stradivarius</em></li>
-                    </ul>
-                </div>
                 
-                <div class="date">
-                    <ul>
-                        <li>2025</li>
-                    </ul>
-                </div>
+                <p><strong>Vendeur</strong><span>2025</span><br><em>Stradivarius</em></p>
 
         </section>
 
