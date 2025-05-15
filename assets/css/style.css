@@ -104,6 +104,28 @@ main section p span {
     color: #333333;
 }
 
+.special {
+    position: relative;
+    padding-left: 15px;
+    background-color: transparent;
+    transition: background-color 0.3s ease;
+}
+
+.special:hover {
+    background-color: #f3f3f3; 
+}
+
+.special:hover::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 4px;
+    background-color: #17abb3; 
+    border-radius: 2px;
+}
+
 /*footer*/
 
 footer {
