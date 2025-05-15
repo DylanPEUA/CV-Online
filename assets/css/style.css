@@ -72,3 +72,33 @@ header a {
     text-decoration: none;
     color: #ffffff;
 }
+
+/*main*/
+
+h3 {
+    color: #17abb3;
+}
+
+main {
+    display: flex;
+    gap: 40px; /* espace entre les sections */
+}
+
+main section:first-of-type {
+    flex: 1; /* 1 part sur 3 */
+    background-color: #f3f3f3;
+    padding: 20px;
+}
+
+main section:last-of-type {
+    flex: 2; /* 2 parts sur 3 */
+}
+
+main section p span {
+    float: right;
+    padding-right: 10px;
+    color: #17abb3;
+}
+.language {
+    color: #333333;
+}
