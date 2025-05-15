@@ -111,6 +111,11 @@ main section:last-of-type {
     flex: 2;
 }
 
+.indent-justify {
+    text-align: justify;     /* Justifie le texte */
+    text-indent: 1.5em;   
+}
+
 /* Alignement des notes et dates à droite */
 main section p span {
     float: right;
