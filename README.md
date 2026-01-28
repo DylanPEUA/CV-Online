@@ -24,12 +24,11 @@ Bilan/
 ├── README.md               # Documentation du projet
 └── assets/
     ├── css/
-    │   └── style.css       # Feuille de styles (320+ lignes)
+    │   └── style.css       # Feuille de styles 
     ├── fonts/
     │   ├── Raleway-Italic-VariableFont_wght.ttf
     │   └── Raleway-VariableFont_wght.ttf
     └── img/
-        ├── favicon.ico     # Icône de l'onglet
         └── pdp.jpg         # Photo de profil
 ```
 
@@ -41,7 +40,7 @@ Bilan/
 - **Photo de profil** ronde avec cercle décoratif
 - **Sections** :
   - Expériences professionnelles
-  - Études et formations
+  - Études 
   - Compétences techniques
   - Langues
 
@@ -56,33 +55,13 @@ Bilan/
 
 ## 💻 Compétences techniques présentées
 
-- **Front-end** : HTML, CSS, JavaScript, React
-- **Back-end** : PHP, Node.js
-- **Frameworks CSS** : Tailwind CSS, Bootstrap, Sass
+- **Front-end** : HTML, CSS
 - **Outils** : Git, VS Code
 
 ## 🚀 Installation et utilisation
 
 1. Clonez ou téléchargez ce dépôt
 2. Ouvrez le fichier `index.html` dans votre navigateur
-3. Pour exporter en PDF : `Ctrl + P` → "Enregistrer au format PDF"
-
-## ✅ Corrections appliquées
-
-Ce projet a été corrigé suite à une évaluation formative :
-
-- ✅ Ajout du favicon et meta description
-- ✅ Structure HTML sémantique (address, article, section)
-- ✅ Suppression des balises `<br>` pour la mise en page
-- ✅ Hiérarchie des titres correcte (h1 > h2 > h3)
-- ✅ Box-sizing: border-box global
-- ✅ Syntaxe @font-face corrigée
-
-## 📝 Notes de version
-
-- **v1.0** - Design initial avec étoiles de notation et deux colonnes
-- **v2.0** - Refonte complète : format A4, design moderne single-column
-- **v2.1** - Palette turquoise et compétences enrichies
 
 ## 👤 Auteur
 
