@@ -1,155 +1,156 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="fr" dir="ltr">
 <head>
+    <!-- Encodage et responsive -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CV Online</title>
-
-    <!-- Lien vers les icônes FontAwesome -->
-    <script src="https://kit.fontawesome.com/69b0649955.js" crossorigin="anonymous"></script>
+    
+    <!-- SEO : description pour les moteurs de recherche -->
+    <meta name="description" content="Curriculum Vitae en ligne de Dylan Peua, Développeur Web et Web Mobile. Découvrez mes compétences, formations et expériences professionnelles.">
+    
+    <!-- Titre complet pour l'accessibilité (pas d'abréviation) -->
+    <title>Curriculum Vitae en ligne - Dylan Peua - Développeur Web</title>
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="./assets/img/favicon.ico">
 
     <!-- Feuille de style principale -->
     <link rel="stylesheet" href="./assets/css/style.css">
 
-    <!-- Police Lato depuis Google Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    <!-- Police Poppins depuis Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
 
-    <!-- En-tête avec photo, nom, titre et infos personnelles -->
+    <!-- ========================================
+         EN-TÊTE : Présentation et contact
+         ======================================== -->
     <header>
-        <section>
-            <!-- Photo de profil cliquable pour l'afficher en grand -->
-            <a href="./assets/img/pdp.jpg" target="_blank">
-                <img src="./assets/img/pdp.jpg" alt="Photo de profil">
-            </a>
-            
-            <!-- Informations personnelles -->
-            <div>
-                <h1>Dylan Peua</h1>
-                <h2>Développeur Web et Web Mobile</h2>
-                <ul>
-                    <li><i class="fa-solid fa-envelope"></i><a href="mailto:dylan.peua@gmail.com">dylan.peua@gmail.com</a></li>
-                    <li><i class="fa-solid fa-phone"></i><a href="tel:+33666666666">0666666666</a></li>
-                    <li><i class="fa-solid fa-house"></i><a href="https://www.google.fr/maps/place/20+Av.+Leclerc,+69007+Lyon/@45.7432278,4.8299548,18.25z/data=!4m6!3m5!1s0x47f4ea35c0fc6c5d:0xe536f3544d064a88!8m2!3d45.7437268!4d4.8302951!16s%2Fg%2F11c1549_6b?entry=ttu&g_ep=EgoyMDI1MDUwNy4wIKXMDSoASAFQAw%3D%3D" target="_blank"> 20 Av. Leclerc, 69007 Lyon</a></li>
-                    <li><i class="fa-solid fa-car"></i>Permis B</li>
-                </ul>
-            </div>  
-        </section>
+
+        <!-- Section présentation : nom, intro et coordonnées -->
+        <div class="header-content">
+            <div class="header-text">
+                <!-- Nom complet (h1 = titre principal de la page) -->
+                <h1 class="name">Dylan Peua</h1>
+                
+                <!-- Paragraphe d'accroche / profil -->
+                <p class="intro">
+                    Développeur web <strong>full stack</strong> en formation, passionné par la création d'applications web complètes. 
+                    Compétent en front-end, back-end et bases de données, je recherche un stage pour évoluer en environnement professionnel.
+                </p>
+
+                <!-- Coordonnées de contact dans balise address (sémantique) -->
+                <address class="contact-info">
+                    <div class="contact-item">
+                        <span class="contact-label">E-mail</span>
+                        <a href="mailto:dylanpeua2@gmail.com">dylanpeua2@gmail.com</a>
+                    </div>
+                    <div class="contact-item">
+                        <span class="contact-label">Téléphone</span>
+                        <a href="tel:+33768919546">07 68 91 95 46</a>
+                    </div>
+                    <div class="contact-item">
+                        <span class="contact-label">GitHub</span>
+                        <a href="https://github.com/dylanpeua" target="_blank" rel="noopener noreferrer">github.com/dylanpeua</a>
+                    </div>
+                </address>
+            </div>
+
+            <!-- Photo de profil avec décoration cercle en arrière-plan -->
+            <div class="photo-container">
+                <div class="photo-decoration" aria-hidden="true"></div>
+                <a href="./assets/img/pdp.jpg" target="_blank" rel="noopener noreferrer" aria-label="Voir la photo en taille réelle">
+                    <img src="./assets/img/pdp.jpg" alt="Portrait de Dylan Peua, développeur web" loading="lazy">
+                </a>
+            </div>
+        </div>
     </header>
-    
+
+    <!-- ========================================
+         CONTENU PRINCIPAL
+         ======================================== -->
     <main>
-
-        <!-- Colonne de gauche : compétences, langues, qualités, centres d'intérêt -->
+        
+        <!-- ====== SECTION EXPÉRIENCE ====== -->
         <section>
+            <h3>Expérience</h3>
 
+            <!-- Expérience 1 : Vendeur -->
+            <article class="experience-item">
+                <div class="experience-header">
+                    <strong>Vendeur polyvalent</strong>
+                    <span class="date">[2025/04] - [2025/11]</span>
+                </div>
+                <p class="company">Stradivarius, Lyon Part-Dieu</p>
+                <ul class="experience-list">
+                    <li>Accueillir, conseiller et accompagner les clients dans leurs achats en garantissant une expérience en magasin de qualité.</li>
+                    <li>Gérer efficacement la pression et le stress lors des périodes de forte affluence (soldes, pics d’activité), tout en maintenant un service client de qualité.</li>
+                    <li>Participer à la réception des marchandises, au réassort et à l’organisation des réserves.</li>
+                </ul>
+            </article>
+
+            <!-- Expérience 2 : Stage ingénieur -->
+            <article class="experience-item">
+                <div class="experience-header">
+                    <strong>Stage Ingénieur de recherche</strong>
+                    <span class="date">[2023/04] - [2023/08]</span>
+                </div>
+                <p class="company">IFP Energies Nouvelles, Solaise</p>
+                <ul class="experience-list">
+                    <li>Avancer le travail bibliographique produit sur le réacteur à
+                        écoulement PAM-OFR (Potential Aerosol Mass Oxydation Flow
+                        Reactor) et les conditions atmosphériques à simuler.
+                    </li>
+                    <li>Définir des protocoles de validation et d’utilisation du PAM-OFR.</li>
+                    <li>Conduire une campagne expérimentale pour étudier la formation
+                        d'aérosols organiques secondaires avec ces nouveaux protocoles.
+                    </li>
+                </ul>
+            </article>
+        </section>
+
+        <!-- ====== SECTION ÉTUDES ====== -->
+        <section>
+            <h3>Études</h3>
+
+            <!-- Formation en cours -->
+            <article class="experience-item">
+                <div class="experience-header">
+                    <strong>Niveau 5 - Bac+2, TP Développeur Web et Web Mobile</strong>
+                    <span class="date">[2025/04] - En cours</span>
+                </div>
+                <p class="company">Centre Européen de formation</p>
+            </article>
+
+            <article class="experience-item">
+                <div class="experience-header">
+                    <strong>Master SOAC - Bac+5, Science de l'océan, de l'atmosphère et du climat</strong>
+                    <span class="date">[2022/09] - [2025/09]</span>
+                </div>
+                <p class="company">Université Claude Bernard Lyon 1</p>
+            </article>
+        </section>
+
+        <!-- ====== SECTION COMPÉTENCES TECHNIQUES ====== -->
+        <section>
             <h3>Compétences</h3>
-
-            <!-- Liste des compétences avec notation par étoiles -->
-            <p><strong>HTML </strong>
-                <span>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="far fa-star"></i>
-                </span>
-            </p>
-            <p><strong>CSS</strong> 
-                <span>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="far fa-star"></i>
-                </span>
-            </p>
-            <p><strong>JavaScript</strong>
-                <span>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="far fa-star"></i>
-                    <i class="far fa-star"></i>
-                    <i class="far fa-star"></i>
-                </span>
-            </p>
-            <p><strong>PHP</strong>
-                <span>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="far fa-star"></i>
-                    <i class="far fa-star"></i>
-                    <i class="far fa-star"></i>
-                    <i class="far fa-star"></i>
-                </span>
-            </p>
-
-            <h3>Langues</h3>
-
-            <!-- Liste des langues parlées avec niveaux -->
-            <p><strong>Français</strong><span class="language">Langue maternelle</span></p>
-            <p><strong>Anglais</strong><span class="language">Niveau C1</span></p>
-            <p><strong>Espagnol</strong><span class="language">Notions</span></p>
-
-            <h3>Qualités</h3>
-
-            <ul class="self">
-                <li>Esprit d'équipe</li>
-                <li>Autonomie</li>
-                <li>Organisation</li>
-                <li>Creativité</li>
+            <ul class="competences-list">
+                <li>Langages : HTML5, CSS3, JavaScript, PHP, Sass</li>
+                <li>Frameworks & Librairies : React.js, Node.js (Express), Bootstrap, Tailwind CSS</li>
+                <li>Bases de données : MySQL Workbench, SQL</li>
+                <li>Outils & CMS : Git, GitHub, Figma, WordPress</li>
             </ul>
-
-            <h3>Centres d'intérêt</h3>
-
-            <ul class="self">
-                <li>Yoga</li>
-                <li>Tennis</li>
-                <li>Ecologie</li>
-            </ul>
-
         </section>
 
-        <!-- Colonne de droite : profil, formations, stages, expériences -->
+        <!-- ====== SECTION LANGUES ====== -->
         <section>
-
-            <h3>Profil</h3>
-            <hr>
-
-            <p class="indent-justify">
-                Étudiant motivé cherchant à acquérir des connaissances dans le domaine 
-                du travail.  Cherche à mettre à profit son savoir-faire tout en visant
-                l’excellence dans le travail fourni.
-            </p>
-
-            <h3>Formations</h3>
-            <hr>
-
-            <p class="special"><strong>Titre Professionnel DWWM</strong><span>2025</span><br><em>Centre Européen de formation</em></p>
-            <p class="special"><strong>Master Science de l'Océan, de l'Atmosphère et du Climat</strong><span>2022/2024</span><br><em>Université Claude Bernard Lyon 1</em></p>
-            <p class="special"><strong>Licence Physique Chimie</strong><span>2019/2022</span><br><em>Université de la Polynésie Française</em></p>
-            <p class="special"><strong>Baccalauréat</strong><span>2019</span><br><em>Lycée Paul-Gauguin</em></p>
-
-            <h3>Stages</h3>
-            <hr>
-
-            <p class="special"><strong>Ingénieur de recherche</strong><span>2019</span><br><em>IFP Energies Nouvelles</em></p>
-
-            <h3>Expériences professionnelle</h3>
-            <hr>
-
-            <p class="special"><strong>Vendeur</strong><span>2025</span><br><em>Stradivarius</em></p>
-
+            <h3>Langues</h3>
+            <ul class="competences-list">
+                <li>Français : Langue maternelle</li>
+                <li>Anglais : Niveau B2</li>
+            </ul>
         </section>
-
     </main>
-
-    <!-- Pied de page avec icônes de réseaux sociaux et date de mise à jour -->
-    <footer>
-        <i class="fa-brands fa-linkedin"></i>
-        <i class="fa-brands fa-github"></i>
-        <i class="fa-brands fa-instagram"></i>
-        <p><em>Mis à jour le</em> <time datetime="2025-05-08">15/05/2025</time></p>
-    </footer>  
 
 </body>
 </html>
