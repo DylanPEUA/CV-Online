@@ -1,179 +1,354 @@
-/* Importation de la police Raleway (normale et italique) */
+/* =====================================================
+   FEUILLE DE STYLE - CV EN LIGNE
+   =====================================================
+   Auteur      : Dylan Peua
+   Version     : 2.1
+   Description : Styles pour le CV au format A4 moderne
+   Couleur     : Turquoise (#17abb3)
+   ===================================================== */
+
+/* =====================================================
+   1. IMPORT DES POLICES LOCALES
+   Police Raleway en fallback si Poppins ne charge pas
+   ===================================================== */
+
+@font-face {
+    font-family: "Raleway";
+    src: url('../fonts/Raleway-VariableFont_wght.ttf') format('truetype');
+    font-style: normal;
+}
+
 @font-face {
     font-family: "Raleway";
     src: url('../fonts/Raleway-Italic-VariableFont_wght.ttf') format('truetype');
-    src: url('../fonts/Raleway-VariableFont_wght.ttf') format('truetype');
+    font-style: italic;
 }
 
-/*Corps de page*/
-body {
-    max-width: 1160px;
-    background-color: #ffffff;
-    font-family: "Raleway", sans-serif;
-    font-size: 0.9rem;
-    padding: 0px;
-    margin: 0px auto;
-    width: 80%;
-    box-shadow: -100px 0 0 #f3f3f3, 100px 0 0 #f3f3f3; /* Effet de marges grisées à gauche et à droite */
+/* =====================================================
+   2. VARIABLES CSS ET RESET
+   Utilisation de variables pour faciliter la maintenance
+   ===================================================== */
+
+:root {
+    /* Couleurs principales */
+    --primary-color: #17abb3;      /* Turquoise - couleur principale */
+    --primary-light: #5dc9cf;      /* Turquoise clair */
+    --accent-color: #17abb3;       /* Couleur d'accent */
+    
+    /* Couleurs de texte */
+    --text-dark: #333333;          /* Texte principal */
+    --text-light: #666666;         /* Texte secondaire */
+    
+    /* Couleurs de fond */
+    --bg-light: #f3f3f3;           /* Fond gris clair */
+    --white: #ffffff;              /* Blanc */
 }
 
-/* Titres généraux */
-h1, h2, h3 {
-    font-family: 'Lato';
-}
-
-/*Header*/
-
-/* Titre principal */
-h1 {
-    font-size: 3rem;
+/* Reset universel */
+*, *::before, *::after {
+    box-sizing: border-box;
+    margin: 0;
     padding: 0;
+}
+
+html {
+    background-color: #d0d0d0;
+}
+
+/* =====================================================
+   3. CORPS DE PAGE - FORMAT A4
+   Dimensions : 794px x 1123px (210mm x 297mm à 96dpi)
+   ===================================================== */
+
+body {
+    width: 794px;                  /* Largeur A4 */
+    min-height: 1123px;            /* Hauteur A4 */
+    background-color: var(--white);
+    font-family: 'Poppins', 'Raleway', sans-serif;
+    font-size: 0.8rem;
+    margin: 30px auto;             /* Centré avec marge */
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);  /* Ombre portée */
+    color: var(--text-dark);
+    line-height: 1.5;
+}
+
+/* =====================================================
+   4. EN-TÊTE (HEADER)
+   ===================================================== */
+
+header {
+    position: relative;
+}
+
+/* Bandeau titre turquoise en haut */
+.title-banner {
+    background-color: var(--primary-color);
+    color: var(--white);
+    padding: 10px 30px;
+    text-align: center;
+}
+
+/* Titre h1 dans le bandeau */
+.title-banner h1 {
+    font-size: 0.85rem;
+    font-weight: 500;
+    text-transform: uppercase;     /* Majuscules */
+    letter-spacing: 2px;           /* Espacement des lettres */
     margin: 0;
 }
 
-/* Conteneur principal de l'en-tête */
-header section {
+/* Contenu du header */
+.header-content {
     display: flex;
-    align-items: center;
-    gap: 80px;
-    margin: auto;
-    padding: 20px;
-    background-color: #17abb3;
-    color: #ffffff;
+    padding: 25px 30px;
+    gap: 20px;
+    align-items: flex-start;
 }
 
-/* Photo de profil */
-header a img {
-    width: 150px;
-    height: 150px;
-    border-radius: 50%;
-    object-fit: cover;
-    border: 5px solid #ffffff;
-    margin-left: 40px;
-    cursor: zoom-in; 
-}
-
-/* Zone contenant nom, titre, contact */
-header div {
-    text-align: center;
-    flex: 1; 
-}
-
-/* Liste des infos personnelles */
-header ul {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr); /* Deux colonnes égales */
-    gap: 10px 30px;
-    align-items: center;
-    list-style: none;
-    padding: 0;
-    margin: 20px auto 0;
-    max-width: 300px;
-    padding-left: 40px;
-}
-
-/* Élément individuel de contact */
-header li {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    justify-content: flex-start;
-}
-
-/* Liens dans l’en-tête */
-header a {
-    text-decoration: none;
-    color: #ffffff;
-}
-
-/*Main */
-
-/* Titres secondaires */
-h3 {
-    color: #17abb3;
-}
-
-/* Disposition des deux colonnes */
-main {
-    display: flex;
-    gap: 40px; 
-}
-
-/* Colonne gauche qui prend (1/3) de la page */
-main section:first-of-type {
+.header-text {
     flex: 1;
-    background-color: #f3f3f3;
-    padding: 20px;
 }
 
-/* Colonne droite qui prend (2/3) de la page */
-main section:last-of-type {
-    flex: 2;
+/* Nom */
+.name {
+    font-size: 2.8rem;
+    font-weight: 700;
+    color: var(--text-dark);
+    margin: 0 0 15px 0;
+    line-height: 1.1;
 }
 
-.indent-justify {
-    text-align: justify;     /* Justifie le texte */
-    text-indent: 1.5em;   
+/* Paragraphe d'introduction */
+.intro {
+    font-size: 0.75rem;
+    color: var(--text-light);
+    text-align: justify;
+    margin-bottom: 20px;
+    line-height: 1.6;
 }
 
-/* Alignement des notes et dates à droite */
-main section p span {
-    float: right;
-    padding-right: 10px;
-    color: #17abb3;
+/* Coordonnées */
+.contact-info {
+    display: flex;
+    gap: 30px;
+    font-style: normal;
+    border-top: 1px solid #eee;
+    padding-top: 15px;
 }
 
-/* Partie langues, niveau en noir */
-.language {
-    color: #333333;
+.contact-item {
+    display: flex;
+    flex-direction: column;
 }
 
-/* Mise en forme des éléments de type "special" (formations, expériences...) */
-.special {
+.contact-label {
+    font-size: 0.65rem;
+    font-weight: 600;
+    color: var(--text-light);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 3px;
+}
+
+.contact-item a,
+.contact-item span {
+    font-size: 0.75rem;
+    color: var(--text-dark);
+    text-decoration: none;
+}
+
+.contact-item a:hover {
+    color: var(--primary-color);
+}
+
+/* Photo de profil avec décoration */
+.photo-container {
     position: relative;
+    width: 150px;
+    height: 150px;                 /* Carré pour photo ronde */
+    flex-shrink: 0;                /* Empêche le rétrécissement */
+}
+
+/* Cercle décoratif derrière la photo */
+.photo-decoration {
+    position: absolute;
+    top: -5px;
+    right: -15px;
+    width: 130px;
+    height: 130px;
+    background-color: var(--accent-color);
+    border-radius: 50%;            /* Cercle parfait */
+    opacity: 0.5;
+    z-index: 0;                    /* Derrière la photo */
+}
+
+.photo-container a {
+    position: relative;
+    z-index: 1;
+    display: block;
+}
+
+.photo-container img {
+    width: 140px;
+    height: 140px;                 /* Carré pour cadre rond */
+    object-fit: cover;
+    object-position: center top;   /* Centre sur le visage */
+    border-radius: 50%;            /* Cadre rond */
+    border: 3px solid var(--white);
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.15);
+}
+
+/* =====================================================
+   5. CONTENU PRINCIPAL (MAIN)
+   ===================================================== */
+
+main {
+    padding: 0 30px 30px;
+}
+
+main section {
+    margin-bottom: 20px;
+}
+
+/* Titres de section (h3) avec soulignement */
+h3 {
+    font-size: 1rem;
+    font-weight: 600;
+    color: var(--primary-color);
+    text-transform: uppercase;     /* Majuscules */
+    letter-spacing: 1px;
+    margin-bottom: 10px;
+    padding-bottom: 5px;
+    border-bottom: 2px solid var(--primary-color);  /* Soulignement */
+    display: inline-block;         /* Soulignement s'adapte au texte */
+}
+
+/* =====================================================
+   6. EXPÉRIENCE ET ÉTUDES
+   ===================================================== */
+
+.experience-item {
+    margin-bottom: 15px;
+}
+
+.experience-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    margin-bottom: 2px;
+}
+
+.experience-header strong {
+    font-size: 0.85rem;
+    font-weight: 600;
+    color: var(--text-dark);
+}
+
+.experience-header .date {
+    font-size: 0.75rem;
+    color: var(--text-light);
+}
+
+.company {
+    font-size: 0.7rem;
+    color: var(--primary-color);
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    margin-bottom: 5px;
+}
+
+.detail {
+    font-size: 0.75rem;
+    color: var(--text-light);
+    font-style: italic;
+}
+
+/* Liste d'expérience avec puces carrées turquoise */
+.experience-list {
+    list-style: none;              /* Supprime les puces par défaut */
     padding-left: 15px;
-    background-color: transparent;
-    transition: background-color 0.3s ease;
 }
 
-/* Effet au survol pour .special */
-.special:hover {
-    background-color: #f3f3f3;
+.experience-list li {
+    position: relative;
+    font-size: 0.75rem;
+    color: var(--text-light);
+    margin-bottom: 4px;
+    padding-left: 12px;
 }
 
-/* Barre colorée à gauche sur hover */
-.special:hover::before {
+/* Puce carrée personnalisée */
+.experience-list li::before {
     content: "";
     position: absolute;
     left: 0;
-    top: 0;
-    height: 100%;
-    width: 4px;
-    background-color: #17abb3;
-    border-radius: 2px;
+    top: 6px;
+    width: 5px;
+    height: 5px;
+    background-color: var(--primary-color);
 }
 
-/*Footer*/
+/* =====================================================
+   7. COMPÉTENCES ET LANGUES
+   Listes avec puces carrées colorées
+   ===================================================== */
 
-footer {
-    text-align: center;
-    padding: 20px;
-    background-color: #17abb3;
-    color: #ffffff;
+.competences-list {
+    list-style: none;              /* Supprime les puces par défaut */
+    padding-left: 0;
 }
 
-/* Icônes de réseaux sociaux */
-footer i {
-    font-size: 1.5em;
-    margin: 0 10px;
+.competences-list li {
+    position: relative;
+    font-size: 0.75rem;
+    color: var(--text-dark);
+    margin-bottom: 5px;
+    padding-left: 15px;
 }
 
-footer i:hover {
-    opacity: 0.7;
+/* Puce carrée personnalisée */
+.competences-list li::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 6px;
+    width: 6px;
+    height: 6px;
+    background-color: var(--primary-color);
 }
 
-/* Date de mise à jour */
-footer p {
-    margin-top: 10px;
+/* Styles pour le focus (accessibilité clavier) */
+a:focus,
+button:focus {
+    outline: 2px solid var(--primary-color);
+    outline-offset: 2px;
+}
+
+/* Styles pour strong et em (bonne pratique) */
+strong {
+    font-weight: 600;
+}
+
+em {
     font-style: italic;
+}
+
+/* =====================================================
+   8. STYLES POUR L'IMPRESSION (Ctrl+P)
+   Supprime les éléments décoratifs pour l'impression PDF
+   ===================================================== */
+
+@media print {
+    /* Fond blanc pour l'impression */
+    html {
+        background-color: var(--white);
+    }
+    
+    /* Supprime l'ombre et ajuste la largeur */
+    body {
+        margin: 0;
+        box-shadow: none;
+        width: 100%;
+    }
 }
