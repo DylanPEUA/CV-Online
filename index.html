@@ -35,8 +35,10 @@
                 
                 <!-- Paragraphe d'accroche / profil -->
                 <p class="intro">
-                    Développeur web <strong>full stack</strong> en formation, passionné par la création d'applications web complètes. 
-                    Compétent en front-end, back-end et bases de données, je recherche un stage pour évoluer en environnement professionnel.
+                    Développeur web <strong>full stack</strong> sortant d'étude, 
+                    passionné par les nouvelles technologies, 
+                    je souhaite intégrer une équipe dynamique afin de développer
+                    des applications performantes et évolutives.
                 </p>
 
                 <!-- Coordonnées de contact dans balise address (sémantique) -->
@@ -56,11 +58,10 @@
                 </address>
             </div>
 
-            <!-- Photo de profil avec décoration cercle en arrière-plan -->
+            <!-- Photo de profil -->
             <div class="photo-container">
-                <div class="photo-decoration" aria-hidden="true"></div>
-                <a href="./assets/img/pdp.jpg" target="_blank" rel="noopener noreferrer" aria-label="Voir la photo en taille réelle">
-                    <img src="./assets/img/pdp.jpg" alt="Portrait de Dylan Peua, développeur web" loading="lazy">
+                <a href="./assets/img/pdp - Copie.jpg" target="_blank" rel="noopener noreferrer" aria-label="Voir la photo en taille réelle">
+                    <img src="./assets/img/pdp - Copie.jpg" alt="Portrait de Dylan Peua, développeur web" loading="lazy">
                 </a>
             </div>
         </div>
@@ -71,85 +72,101 @@
          ======================================== -->
     <main>
         
-        <!-- ====== SECTION EXPÉRIENCE ====== -->
-        <section>
-            <h3>Expérience</h3>
+        <div class="quarter-frame">
+            <!-- ====== SECTION EXPÉRIENCE ====== -->
+            <section>
+                <h3>Expérience</h3>
+                <article class="experience-item">
+                    <div class="experience-header">
+                        <strong>Stage Développeur Web (6 mois)</strong>
+                        <span class="date">[2026/02] - [2026/08]</span>
+                    </div>
+                    <p class="company">Trails In France, France</p>
+                    <ul class="experience-list">
+                        <li>Développement de <strong>plugins WordPress</strong> en PHP orienté objet avec automatisation quotidienne pour synchroniser des données métier complexes.</li>
+                        <li>Architecture d'un <strong>système de recherche dynamique</strong> avec API REST pour comptage en temps réel et interface utilisateur interactive.</li>
+                        <li>Maîtrise complète de l'écosystème WordPress : métadonnées, taxonomies, hooks, champs personnalisés et automatisation via cron jobs.</li>
+                        <li><strong>Développement front-end</strong> avancé : CSS personnalisé, design responsive, animations et optimisation pour tous les appareils.</li>
+                        <li>Intégration d'<strong>APIs externes</strong> et scripts de traitement de données avec gestion des formats hétérogènes.</li>
+                    </ul>
+                </article>
+                <article class="experience-item">
+                    <div class="experience-header">
+                        <strong>Vendeur polyvalent</strong>
+                        <span class="date">[2025/04] - [2025/11]</span>
+                    </div>
+                    <p class="company">Stradivarius, Lyon Part-Dieu</p>
+                    <ul class="experience-list">
+                        <li>Accueillir, conseiller et accompagner les clients dans leurs achats en garantissant une expérience en magasin de qualité.</li>
+                        <li>Gérer efficacement la pression et le stress lors des périodes de forte affluence (soldes, pics d’activité), tout en maintenant un service client de qualité.</li>
+                        <li>Participer à la réception des marchandises, au réassort et à l’organisation des réserves.</li>
+                    </ul>
+                </article>
+                <article class="experience-item">
+                    <div class="experience-header">
+                        <strong>Stage Ingénieur de recherche</strong>
+                        <span class="date">[2023/04] - [2023/08]</span>
+                    </div>
+                    <p class="company">IFP Energies Nouvelles, Solaise</p>
+                    <ul class="experience-list">
+                        <li>Avancer le travail bibliographique produit sur le réacteur à
+                            écoulement PAM-OFR (Potential Aerosol Mass Oxydation Flow
+                            Reactor) et les conditions atmosphériques à simuler.
+                        </li>
+                        <li>Définir des protocoles de validation et d’utilisation du PAM-OFR.</li>
+                        <li>Conduire une campagne expérimentale pour étudier la formation
+                            d'aérosols organiques secondaires avec ces nouveaux protocoles.
+                        </li>
+                    </ul>
+                </article>
+            </section>
 
-            <!-- Expérience 1 : Vendeur -->
-            <article class="experience-item">
-                <div class="experience-header">
-                    <strong>Vendeur polyvalent</strong>
-                    <span class="date">[2025/04] - [2025/11]</span>
-                </div>
-                <p class="company">Stradivarius, Lyon Part-Dieu</p>
-                <ul class="experience-list">
-                    <li>Accueillir, conseiller et accompagner les clients dans leurs achats en garantissant une expérience en magasin de qualité.</li>
-                    <li>Gérer efficacement la pression et le stress lors des périodes de forte affluence (soldes, pics d’activité), tout en maintenant un service client de qualité.</li>
-                    <li>Participer à la réception des marchandises, au réassort et à l’organisation des réserves.</li>
+                        <!-- ====== SECTION ÉTUDES ====== -->
+            <section>
+                <h3>Études</h3>
+
+                <!-- Formation en cours -->
+                <article class="experience-item">
+                    <div class="experience-header">
+                        <strong>Niveau 5 - Bac+2, TP Développeur Web et Web Mobile</strong>
+                        <span class="date">[2025/04] - [2026/08]</span>
+                    </div>
+                    <p class="company">Centre Européen de formation</p>
+                </article>
+
+                <article class="experience-item">
+                    <div class="experience-header">
+                        <strong>Master SOAC - Bac+5, Science de l'océan, de l'atmosphère et du climat</strong>
+                        <span class="date">[2022/09] - [2025/09]</span>
+                    </div>
+                    <p class="company">Université Claude Bernard Lyon 1</p>
+                </article>
+            </section>
+        </div>
+
+        <div class="tree-frame">
+            <!-- ====== SECTION COMPÉTENCES TECHNIQUES ====== -->
+            <section>
+                <h3>Compétences</h3>
+                <ul class="competences-list">
+                    <li><strong>Langages</strong> : HTML5, CSS3, JavaScript, PHP, Python, Sass</li>
+                    <li><strong>PHP & WordPress</strong> : POO, Plugins, Hooks, REST API, ACF, Cron jobs</li>
+                    <li><strong>Frontend Avancé</strong> : CSS Variables, Flexbox, Media queries, Design responsive</li>
+                    <li><strong>Frameworks</strong> : React.js, Node.js (Express), Bootstrap, Tailwind CSS</li>
+                    <li><strong>Backend & Données</strong> : MySQL, SQL, APIs REST, Traitement de données</li>
+                    <li><strong>Outils</strong> : Git, GitHub, VS Code, Figma</li>
                 </ul>
-            </article>
+            </section>
 
-            <!-- Expérience 2 : Stage ingénieur -->
-            <article class="experience-item">
-                <div class="experience-header">
-                    <strong>Stage Ingénieur de recherche</strong>
-                    <span class="date">[2023/04] - [2023/08]</span>
-                </div>
-                <p class="company">IFP Energies Nouvelles, Solaise</p>
-                <ul class="experience-list">
-                    <li>Avancer le travail bibliographique produit sur le réacteur à
-                        écoulement PAM-OFR (Potential Aerosol Mass Oxydation Flow
-                        Reactor) et les conditions atmosphériques à simuler.
-                    </li>
-                    <li>Définir des protocoles de validation et d’utilisation du PAM-OFR.</li>
-                    <li>Conduire une campagne expérimentale pour étudier la formation
-                        d'aérosols organiques secondaires avec ces nouveaux protocoles.
-                    </li>
+            <!-- ====== SECTION LANGUES ====== -->
+            <section>
+                <h3>Langues</h3>
+                <ul class="competences-list">
+                    <li><strong>Français</strong> : Langue maternelle</li>
+                    <li><strong>Anglais</strong> : Niveau B2</li>
                 </ul>
-            </article>
-        </section>
-
-        <!-- ====== SECTION ÉTUDES ====== -->
-        <section>
-            <h3>Études</h3>
-
-            <!-- Formation en cours -->
-            <article class="experience-item">
-                <div class="experience-header">
-                    <strong>Niveau 5 - Bac+2, TP Développeur Web et Web Mobile</strong>
-                    <span class="date">[2025/04] - En cours</span>
-                </div>
-                <p class="company">Centre Européen de formation</p>
-            </article>
-
-            <article class="experience-item">
-                <div class="experience-header">
-                    <strong>Master SOAC - Bac+5, Science de l'océan, de l'atmosphère et du climat</strong>
-                    <span class="date">[2022/09] - [2025/09]</span>
-                </div>
-                <p class="company">Université Claude Bernard Lyon 1</p>
-            </article>
-        </section>
-
-        <!-- ====== SECTION COMPÉTENCES TECHNIQUES ====== -->
-        <section>
-            <h3>Compétences</h3>
-            <ul class="competences-list">
-                <li>Langages : HTML5, CSS3, JavaScript, PHP, Sass</li>
-                <li>Frameworks & Librairies : React.js, Node.js (Express), Bootstrap, Tailwind CSS</li>
-                <li>Bases de données : MySQL Workbench, SQL</li>
-                <li>Outils & CMS : Git, GitHub, Figma, WordPress</li>
-            </ul>
-        </section>
-
-        <!-- ====== SECTION LANGUES ====== -->
-        <section>
-            <h3>Langues</h3>
-            <ul class="competences-list">
-                <li>Français : Langue maternelle</li>
-                <li>Anglais : Niveau B2</li>
-            </ul>
-        </section>
+            </section>
+        </div>
     </main>
 
 </body>
