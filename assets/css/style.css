@@ -30,17 +30,17 @@
    ===================================================== */
 
 :root {
-    /* Couleurs principales */
-    --primary-color: #17abb3;      /* Turquoise - couleur principale */
-    --primary-light: #5dc9cf;      /* Turquoise clair */
-    --accent-color: #17abb3;       /* Couleur d'accent */
+    /* Couleurs principales - Palette moderne bleu + orange */
+    --primary-color: #1F3B6B;      /* Bleu marine - professionnel */
+    --accent-color: #FF6B35;       /* Orange vif - dynamique */
+    --secondary-color: #4A90E2;    /* Bleu clair - accent */
     
     /* Couleurs de texte */
-    --text-dark: #333333;          /* Texte principal */
-    --text-light: #666666;         /* Texte secondaire */
+    --text-dark: #2C3E50;          /* Texte principal */
+    --text-light: #7F8C8D;         /* Texte secondaire */
     
     /* Couleurs de fond */
-    --bg-light: #f3f3f3;           /* Fond gris clair */
+    --bg-light: #F8F9FA;           /* Gris très clair */
     --white: #ffffff;              /* Blanc */
 }
 
@@ -69,7 +69,7 @@ body {
     margin: 30px auto;             /* Centré avec marge */
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);  /* Ombre portée */
     color: var(--text-dark);
-    line-height: 1.5;
+    line-height: 1.3;
 }
 
 /* =====================================================
@@ -78,30 +78,16 @@ body {
 
 header {
     position: relative;
-}
-
-/* Bandeau titre turquoise en haut */
-.title-banner {
-    background-color: var(--primary-color);
-    color: var(--white);
-    padding: 10px 30px;
-    text-align: center;
-}
-
-/* Titre h1 dans le bandeau */
-.title-banner h1 {
-    font-size: 0.85rem;
-    font-weight: 500;
-    text-transform: uppercase;     /* Majuscules */
-    letter-spacing: 2px;           /* Espacement des lettres */
-    margin: 0;
+    background: linear-gradient(135deg, #FF6B35 0%, #FF8555 100%);
+    padding: 0;
+    clip-path: polygon(0 0, 100% 0, 100% 92%, 0 100%);
 }
 
 /* Contenu du header */
 .header-content {
     display: flex;
-    padding: 25px 30px;
-    gap: 20px;
+    padding: 18px 30px 25px 30px;
+    gap: 15px;
     align-items: flex-start;
 }
 
@@ -111,20 +97,20 @@ header {
 
 /* Nom */
 .name {
-    font-size: 2.8rem;
+    font-size: 2.3rem;
     font-weight: 700;
-    color: var(--text-dark);
-    margin: 0 0 15px 0;
-    line-height: 1.1;
+    color: var(--white);
+    margin: 0 0 5px 0;
+    line-height: 1;
 }
 
 /* Paragraphe d'introduction */
 .intro {
-    font-size: 0.75rem;
-    color: var(--text-light);
+    font-size: 0.7rem;
+    color: rgba(255, 255, 255, 0.95);
     text-align: justify;
-    margin-bottom: 20px;
-    line-height: 1.6;
+    margin-bottom: 10px;
+    line-height: 1.3;
 }
 
 /* Coordonnées */
@@ -132,8 +118,8 @@ header {
     display: flex;
     gap: 30px;
     font-style: normal;
-    border-top: 1px solid #eee;
-    padding-top: 15px;
+    border-top: 2px solid rgba(255, 255, 255, 0.3);
+    padding-top: 12px;
 }
 
 .contact-item {
@@ -142,44 +128,32 @@ header {
 }
 
 .contact-label {
-    font-size: 0.65rem;
+    font-size: 0.6rem;
     font-weight: 600;
-    color: var(--text-light);
+    color: rgba(255, 255, 255, 0.8);
     text-transform: uppercase;
-    letter-spacing: 1px;
-    margin-bottom: 3px;
+    letter-spacing: 0.5px;
+    margin-bottom: 2px;
 }
 
 .contact-item a,
 .contact-item span {
-    font-size: 0.75rem;
-    color: var(--text-dark);
+    font-size: 0.7rem;
+    color: var(--white);
     text-decoration: none;
 }
 
 .contact-item a:hover {
-    color: var(--primary-color);
+    color: var(--accent-color);
 }
 
 /* Photo de profil avec décoration */
 .photo-container {
     position: relative;
-    width: 150px;
-    height: 150px;                 /* Carré pour photo ronde */
-    flex-shrink: 0;                /* Empêche le rétrécissement */
-}
-
-/* Cercle décoratif derrière la photo */
-.photo-decoration {
-    position: absolute;
-    top: -5px;
-    right: -15px;
-    width: 130px;
-    height: 130px;
-    background-color: var(--accent-color);
-    border-radius: 50%;            /* Cercle parfait */
-    opacity: 0.5;
-    z-index: 0;                    /* Derrière la photo */
+    width: 140px;
+    height: 140px;
+    flex-shrink: 0;
+    filter: drop-shadow(0 8px 16px rgba(0, 0, 0, 0.2));
 }
 
 .photo-container a {
@@ -189,13 +163,13 @@ header {
 }
 
 .photo-container img {
-    width: 140px;
-    height: 140px;                 /* Carré pour cadre rond */
+    width: 130px;
+    height: 130px;
     object-fit: cover;
-    object-position: center top;   /* Centre sur le visage */
-    border-radius: 50%;            /* Cadre rond */
-    border: 3px solid var(--white);
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.15);
+    object-position: center top;
+    border-radius: 50%;
+    border: 4px solid var(--white);
+    box-shadow: inset 0 0 0 2px var(--accent-color);
 }
 
 /* =====================================================
@@ -203,24 +177,26 @@ header {
    ===================================================== */
 
 main {
-    padding: 0 30px 30px;
+    padding: 0 25px 15px;
+    display: flex;
+    width: 100%;
 }
 
 main section {
-    margin-bottom: 20px;
+    margin-bottom: 10px;
 }
 
 /* Titres de section (h3) avec soulignement */
 h3 {
-    font-size: 1rem;
-    font-weight: 600;
+    font-size: 0.95rem;
+    font-weight: 700;
     color: var(--primary-color);
-    text-transform: uppercase;     /* Majuscules */
+    text-transform: uppercase;
     letter-spacing: 1px;
-    margin-bottom: 10px;
-    padding-bottom: 5px;
-    border-bottom: 2px solid var(--primary-color);  /* Soulignement */
-    display: inline-block;         /* Soulignement s'adapte au texte */
+    margin-bottom: 6px;
+    padding-bottom: 4px;
+    border-bottom: 3px solid var(--accent-color);
+    display: inline-block;
 }
 
 /* =====================================================
@@ -228,7 +204,9 @@ h3 {
    ===================================================== */
 
 .experience-item {
-    margin-bottom: 15px;
+    margin-bottom: 8px;
+    padding-bottom: 8px;
+    border-bottom: 1px solid rgba(31, 59, 107, 0.1);
 }
 
 .experience-header {
@@ -239,29 +217,23 @@ h3 {
 }
 
 .experience-header strong {
-    font-size: 0.85rem;
-    font-weight: 600;
-    color: var(--text-dark);
+    font-size: 0.82rem;
+    font-weight: 700;
+    color: var(--primary-color);
 }
 
 .experience-header .date {
-    font-size: 0.75rem;
+    font-size: 0.7rem;
     color: var(--text-light);
 }
 
 .company {
-    font-size: 0.7rem;
-    color: var(--primary-color);
-    font-weight: 500;
+    font-size: 0.68rem;
+    color: var(--accent-color);
+    font-weight: 600;
     text-transform: uppercase;
     letter-spacing: 0.5px;
-    margin-bottom: 5px;
-}
-
-.detail {
-    font-size: 0.75rem;
-    color: var(--text-light);
-    font-style: italic;
+    margin-bottom: 4px;
 }
 
 /* Liste d'expérience avec puces carrées turquoise */
@@ -272,21 +244,20 @@ h3 {
 
 .experience-list li {
     position: relative;
-    font-size: 0.75rem;
-    color: var(--text-light);
-    margin-bottom: 4px;
+    font-size: 0.72rem;
+    color: var(--primary-color);
+    margin-bottom: 3px;
     padding-left: 12px;
 }
 
 /* Puce carrée personnalisée */
 .experience-list li::before {
-    content: "";
+    content: "\25CF";
     position: absolute;
     left: 0;
-    top: 6px;
-    width: 5px;
-    height: 5px;
-    background-color: var(--primary-color);
+    top: 3px;
+    color: var(--accent-color);
+    font-size: 0.5rem;
 }
 
 /* =====================================================
@@ -295,27 +266,26 @@ h3 {
    ===================================================== */
 
 .competences-list {
-    list-style: none;              /* Supprime les puces par défaut */
+    list-style: none;
     padding-left: 0;
 }
 
 .competences-list li {
     position: relative;
-    font-size: 0.75rem;
+    font-size: 0.72rem;
     color: var(--text-dark);
-    margin-bottom: 5px;
+    margin-bottom: 4px;
     padding-left: 15px;
 }
 
 /* Puce carrée personnalisée */
 .competences-list li::before {
-    content: "";
+    content: "\25CF";
     position: absolute;
     left: 0;
-    top: 6px;
-    width: 6px;
-    height: 6px;
-    background-color: var(--primary-color);
+    top: 3px;
+    color: var(--accent-color);
+    font-size: 0.5rem;
 }
 
 /* Styles pour le focus (accessibilité clavier) */
@@ -327,7 +297,7 @@ button:focus {
 
 /* Styles pour strong et em (bonne pratique) */
 strong {
-    font-weight: 600;
+    font-weight: 700;
 }
 
 em {
@@ -351,4 +321,107 @@ em {
         box-shadow: none;
         width: 100%;
     }
+    
+    /* Force les couleurs du header */
+    header {
+        background: #FF6B35 !important;
+        -webkit-print-color-adjust: exact;
+        print-color-adjust: exact;
+    }
+    
+    .header-content {
+        background: #FF6B35 !important;
+        -webkit-print-color-adjust: exact;
+        print-color-adjust: exact;
+    }
+    
+    .name {
+        color: var(--white) !important;
+        -webkit-print-color-adjust: exact;
+        print-color-adjust: exact;
+    }
+    
+    .intro {
+        color: rgba(255, 255, 255, 0.95) !important;
+        -webkit-print-color-adjust: exact;
+        print-color-adjust: exact;
+    }
+    
+    .contact-label {
+        color: rgba(255, 255, 255, 0.8) !important;
+        -webkit-print-color-adjust: exact;
+        print-color-adjust: exact;
+    }
+    
+    .contact-item a,
+    .contact-item span {
+        color: var(--white) !important;
+        -webkit-print-color-adjust: exact;
+        print-color-adjust: exact;
+    }
+    
+    /* Force les couleurs des titres */
+    h3 {
+        color: var(--primary-color) !important;
+        border-bottom-color: var(--accent-color) !important;
+        -webkit-print-color-adjust: exact;
+        print-color-adjust: exact;
+    }
+    
+    /* Force les couleurs des expériences */
+    .experience-header strong {
+        color: var(--primary-color) !important;
+        -webkit-print-color-adjust: exact;
+        print-color-adjust: exact;
+    }
+    
+    .company {
+        color: var(--accent-color) !important;
+        -webkit-print-color-adjust: exact;
+        print-color-adjust: exact;
+    }
+    
+    .experience-list li {
+        color: var(--primary-color) !important;
+        -webkit-print-color-adjust: exact;
+        print-color-adjust: exact;
+    }
+    
+    .experience-list li::before {
+        color: var(--accent-color) !important;
+        -webkit-print-color-adjust: exact;
+        print-color-adjust: exact;
+    }
+    
+    /* Force les couleurs des compétences */
+    .competences-list li {
+        color: var(--text-dark) !important;
+        -webkit-print-color-adjust: exact;
+        print-color-adjust: exact;
+    }
+    
+    .competences-list li strong {
+        color: var(--primary-color) !important;
+        -webkit-print-color-adjust: exact;
+        print-color-adjust: exact;
+    }
+    
+    .competences-list li::before {
+        color: var(--accent-color) !important;
+        -webkit-print-color-adjust: exact;
+        print-color-adjust: exact;
+    }
+}
+
+.tree-frame {
+    width: 25%;
+    padding: 15px;
+    background-color: var(--bg-light);
+    border-radius: 8px;
+}
+
+.quarter-frame {
+    width: 75%;
+    padding: 15px;
+    padding-right: 10px;
 }
