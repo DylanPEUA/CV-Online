@@ -15,6 +15,7 @@ Design moderne et mise en page optimisée pour l'impression PDF.
   - Media queries pour l'impression
 - **Google Fonts** : Poppins (300, 400, 500, 600, 700)
 - **Polices locales** : Raleway (variable fonts)
+- **Outils de dev** : Git, GitHub, VS Code, GitHub Copilot
 
 ## 📁 Structure du projet
 
@@ -29,7 +30,8 @@ Bilan/
     │   ├── Raleway-Italic-VariableFont_wght.ttf
     │   └── Raleway-VariableFont_wght.ttf
     └── img/
-        └── pdp.jpg         # Photo de profil
+      ├── pdp - Copie.jpg # Photo de profil
+      └── favicon.ico     # Icône du site
 ```
 
 ## ✨ Fonctionnalités
@@ -55,8 +57,11 @@ Bilan/
 
 ## 💻 Compétences techniques présentées
 
-- **Front-end** : HTML, CSS
-- **Outils** : Git, VS Code
+- **Langages** : HTML5, CSS3, JavaScript, PHP, Python, Sass
+- **PHP & WordPress** : POO, Plugins, Hooks, REST API, ACF, Cron jobs
+- **Frameworks & Front-end** : React.js, Node.js (Express), Bootstrap, Tailwind CSS, Design responsive
+- **Backend & Données** : MySQL, SQL, APIs REST, Traitement de données
+- **Outils & méthode** : Git, GitHub, VS Code, Figma, GitHub Copilot
 
 ## 🚀 Installation et utilisation
 
@@ -70,7 +75,7 @@ Bilan/
 
 ## 📅 Dernière mise à jour
 
-Janvier 2026
+Août 2026
 
 ---
 
