@@ -3,7 +3,7 @@
 ## 📄 Description
 
 CV professionnel au format A4, créé avec HTML5 et CSS3.  
-Design moderne et mise en page optimisée pour l'impression PDF.
+Design moderne avec palette bleu/orange et mise en page optimisée pour l'impression PDF.
 
 ## 🛠️ Technologies utilisées
 
@@ -30,16 +30,17 @@ Bilan/
     │   ├── Raleway-Italic-VariableFont_wght.ttf
     │   └── Raleway-VariableFont_wght.ttf
     └── img/
-      ├── pdp - Copie.jpg # Photo de profil
-      └── favicon.ico     # Icône du site
+        ├── pdp - Copie.jpg # Photo de profil utilisée
+        └── pdp.jpg         # Variante de la photo de profil
 ```
 
 ## ✨ Fonctionnalités
 
 - **Format A4** : 794px × 1123px (optimisé pour l'export PDF)
-- **Design moderne** : typographie claire, couleurs turquoise
-- **Layout single-column** : meilleure lisibilité
+- **Design moderne** : typographie claire, palette bleu/orange professionnelle
+- **Layout 2 colonnes** : contenu principal (75%) + colonne latérale (25%)
 - **Photo de profil** ronde avec cercle décoratif
+- **Header graphique** : dégradé orange et découpe diagonale (clip-path)
 - **Sections** :
   - Expériences professionnelles
   - Études 
@@ -50,10 +51,13 @@ Bilan/
 
 | Couleur | Code hex | Utilisation |
 |---------|----------|-------------|
-| Turquoise | `#17abb3` | Couleur principale |
-| Gris foncé | `#333333` | Texte principal |
-| Gris clair | `#666666` | Texte secondaire |
-| Blanc | `#ffffff` | Arrière-plan |
+| Bleu marine | `#1F3B6B` | Couleur principale (titres, éléments forts) |
+| Orange vif | `#FF6B35` | Accent principal (header, puces, séparateurs) |
+| Bleu clair | `#4A90E2` | Accent secondaire |
+| Gris foncé | `#2C3E50` | Texte principal |
+| Gris moyen | `#7F8C8D` | Texte secondaire |
+| Gris clair | `#F8F9FA` | Fond de la colonne latérale |
+| Blanc | `#FFFFFF` | Fond de la page |
 
 ## 💻 Compétences techniques présentées
 
